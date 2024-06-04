@@ -29,4 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Course/Advanced.unity
     guid: 76b95de7d34c62840823675d64ed5ff3
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Course/AI Chat.unity
+    guid: ce3a60630a3cd494191af0318407e553
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 3717da0766a2c8843bf1eaf27c92fdb2, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: c1897b862f66ea646a973abc5d19fc6d, type: 2}
