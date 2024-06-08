@@ -7,6 +7,12 @@ public class BallControl : MonoBehaviour
     public float speed = 5f;
     int x = 0;
     int y = 0;
+
+    private void Start()
+    {
+        SetVisual();
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.W) && y < 2)
