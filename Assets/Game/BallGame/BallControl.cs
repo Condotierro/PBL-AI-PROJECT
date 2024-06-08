@@ -9,19 +9,19 @@ public class BallControl : MonoBehaviour
     int y = 0;
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.W) && y < 2)
         {
             MoveUp();
         }
-        if (Input.GetKeyDown(KeyCode.S))
+        if (Input.GetKeyDown(KeyCode.S) && y > -3)
         {
             MoveDown();
         }
-        if (Input.GetKeyDown(KeyCode.A))
+        if (Input.GetKeyDown(KeyCode.A) && x > -3)
         {
             MoveLeft();
         }
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.D) && x < 2)
         {
             MoveRight();
         }
@@ -39,6 +39,7 @@ public class BallControl : MonoBehaviour
         v.x = x + 0.5f;
         v.y = y + 0.5f;
         transform.position = v;
+        Debug.Log(x + ":" + y);
     }
 
     public void MoveLeft()
