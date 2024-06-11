@@ -58,10 +58,12 @@ public class SnakeMovement : MonoBehaviour
         {
             isCarryingCoin = true;
             Destroy(collision.gameObject);
+            GameManager.instance.PlaySound(GameManager.instance.collectSound);
         }
         else if (collision.CompareTag("DropOff") && isCarryingCoin)
         {
             DropData();
+            GameManager.instance.PlaySound(GameManager.instance.depositSound);
         }
     }
 

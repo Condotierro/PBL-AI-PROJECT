@@ -9,8 +9,13 @@ public class GameManager : MonoBehaviour
     public GameObject dataPrefab;
     public Transform[] spawnPoints;
 
+    private AudioSource audioSource;
+    public AudioClip collectSound;
+    public AudioClip depositSound;
+
     private void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         if (instance == null)
         {
             instance = this;
@@ -36,5 +41,10 @@ public class GameManager : MonoBehaviour
     {
         int spawnIndex = Random.Range(0, spawnPoints.Length);
         Instantiate(dataPrefab, spawnPoints[spawnIndex].position, Quaternion.identity);
+    }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
     }
 }
