@@ -5,7 +5,7 @@ public class SnakeMovement : MonoBehaviour
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     private Vector2 movement;
-    private bool hasData = false;
+    private bool isCarryingCoin = false;
     private GameObject currentData;
     public Transform dropOffPoint;
     public Vector2 movementBoundsMin;
@@ -54,13 +54,12 @@ public class SnakeMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Data") && !hasData)
+        if (collision.CompareTag("Data") && !isCarryingCoin)
         {
-            hasData = true;
-            currentData = collision.gameObject;
-            currentData.SetActive(false);
+            isCarryingCoin = true;
+            Destroy(collision.gameObject);
         }
-        else if (collision.CompareTag("DropOff") && hasData)
+        else if (collision.CompareTag("DropOff") && isCarryingCoin)
         {
             DropData();
         }
@@ -68,9 +67,7 @@ public class SnakeMovement : MonoBehaviour
 
     void DropData()
     {
-        currentData.transform.position = dropOffPoint.position;
-        currentData.SetActive(true);
-        hasData = false;
+        isCarryingCoin = false;
         GameManager.instance.CollectData();
         GameManager.instance.SpawnNewData();
     }
