@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &26331011
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +434,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151465042}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> 02a3dd04657b442bc40230a48be2503728fa4309
 --- !u!1 &199582447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1716,6 +1719,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a8d62cae219f344eaee5b98ad27f373, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
 --- !u!1 &574205225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1789,6 +1793,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+=======
+>>>>>>> 02a3dd04657b442bc40230a48be2503728fa4309
 --- !u!1 &700214853
 GameObject:
   m_ObjectHideFlags: 0
@@ -2275,6 +2281,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946247698}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!4 &1025377480 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6082608893151647894, guid: 1e4bf1561507c8440a8139529b1e29d2, type: 3}
@@ -2743,6 +2750,9 @@ MonoBehaviour:
   playAreaMin: {x: -2, y: -2}
   playAreaMax: {x: 2, y: 2}
 --- !u!1 &1259928733
+=======
+--- !u!1 &1277354637
+>>>>>>> 02a3dd04657b442bc40230a48be2503728fa4309
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4202,6 +4212,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867092158}
   m_CullTransparentMesh: 1
+<<<<<<< HEAD
 --- !u!1 &1871869685 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5512373765588194946, guid: 458bab9640a014b478f9a4cb3ad8aff3, type: 3}
@@ -4621,6 +4632,8 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1871869688}
   m_SourcePrefab: {fileID: 100100000, guid: 458bab9640a014b478f9a4cb3ad8aff3, type: 3}
+=======
+>>>>>>> 02a3dd04657b442bc40230a48be2503728fa4309
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4629,4 +4642,3 @@ SceneRoots:
   - {fileID: 395826328}
   - {fileID: 1705081166}
   - {fileID: 1627836377}
-  - {fileID: 1223309002}
