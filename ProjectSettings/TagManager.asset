@@ -4,11 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Block
-  - Undefined
-  - DropOffArea
   - Collectible
   - BallCollector
+  - Data
+  - DropOff
+  - Block
   layers:
   - Default
   - TransparentFX
