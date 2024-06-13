@@ -17,4 +17,9 @@ public class MenuController : MonoBehaviour
     {
         SceneManager.LoadSceneAsync(3);
     }
+    public void LoadAiChat()
+    {
+        SceneManager.LoadSceneAsync(4);
+    }
+    
 }

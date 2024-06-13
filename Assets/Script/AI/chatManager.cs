@@ -4,11 +4,12 @@ using TMPro;
 using System.Collections;
 using System.Collections.Generic;
 using MiniJSON;
+using UnityEngine.SceneManagement;
 
 public class ChatManager : MonoBehaviour
 {
     public GameObject chatPanel;
-    public Button openChatButton;
+    public Button closeChatButton;
     public TMP_InputField userInputField;
     public TextMeshProUGUI chatHistoryText;
     public Button sendButton;
@@ -20,9 +21,10 @@ public class ChatManager : MonoBehaviour
 
     void Start()
     {
-        openChatButton.onClick.AddListener(OpenChat);
+        closeChatButton.onClick.AddListener(CloseChat);
         sendButton.onClick.AddListener(OnSendButtonClicked);
         chatPanel.SetActive(false);
+        OpenChat();
     }
 
     void OpenChat()
@@ -33,6 +35,11 @@ public class ChatManager : MonoBehaviour
             scrollbar.gameObject.SetActive(true);
         }
         InitializeChat();
+    }
+
+    void CloseChat()
+    {
+        SceneManager.LoadSceneAsync(2);
     }
 
 
