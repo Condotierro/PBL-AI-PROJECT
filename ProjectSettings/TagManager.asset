@@ -9,6 +9,7 @@ TagManager:
   - Data
   - DropOff
   - Block
+  - Database
   layers:
   - Default
   - TransparentFX
