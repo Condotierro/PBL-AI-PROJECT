@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro; // Import TextMeshPro namespace
+using TMPro;
 
 public class QuizController : MonoBehaviour
 {
@@ -10,6 +10,7 @@ public class QuizController : MonoBehaviour
     public Button submitButton; // Submit button
     public TextMeshProUGUI questionText; // TextMesh Pro field to display the question
     public TextMeshProUGUI scoreText; // TextMesh Pro field to display the score
+
 
     private int currentQuestionIndex = 0;
     private int score = 0;
@@ -26,12 +27,22 @@ public class QuizController : MonoBehaviour
 
     private void Start()
     {
-        submitButton.onClick.AddListener(CheckAnswers);
+        Debug.Log("Start method called");
+        if (submitButton != null)
+        {
+            submitButton.onClick.AddListener(CheckAnswers);
+        }
+        else
+        {
+            Debug.LogError("SubmitButton is not assigned in the Inspector.");
+        }
+
         LoadQuestion();
     }
 
     private void LoadQuestion()
     {
+        Debug.Log("LoadQuestion method called");
         if (currentQuestionIndex < questions.Count)
         {
             questionText.text = questions[currentQuestionIndex].Text;
@@ -39,9 +50,18 @@ public class QuizController : MonoBehaviour
             // Set toggles for the new question
             for (int i = 0; i < toggles.Length; i++)
             {
+
                 toggles[i].isOn = false; // Reset toggle state
-                Text toggleLabel = toggles[i].GetComponentInChildren<Text>();
-                toggleLabel.text = questions[currentQuestionIndex].ToggleTexts[i];
+
+                TextMeshProUGUI toggleLabel = toggles[i].GetComponentInChildren<TextMeshProUGUI>();
+                if (toggleLabel != null)
+                {
+                    toggleLabel.text = questions[currentQuestionIndex].ToggleTexts[i];
+                }
+                else
+                {
+                    Debug.LogError("Toggle is not assigned in the Inspector.");
+                }
             }
         }
         else
@@ -54,19 +74,28 @@ public class QuizController : MonoBehaviour
 
     public void CheckAnswers()
     {
+        Debug.Log("CheckAnswers method called");
         if (currentQuestionIndex < questions.Count)
         {
             bool[] correctAnswers = questions[currentQuestionIndex].CorrectAnswers;
 
             for (int i = 0; i < toggles.Length; i++)
             {
-                if (toggles[i].isOn == correctAnswers[i])
+                if (toggles[i] != null && toggles[i].isOn == correctAnswers[i])
                 {
                     score++;
                 }
             }
 
-            scoreText.text = "Score: " + score + "/" + (currentQuestionIndex + 1) * toggles.Length;
+            if (scoreText != null)
+            {
+                scoreText.text = "Score: " + score + "/" + ((currentQuestionIndex + 1) * toggles.Length);
+            }
+            else
+            {
+                Debug.LogError("ScoreText is not assigned in the Inspector.");
+            }
+
             currentQuestionIndex++;
             LoadQuestion();
         }
