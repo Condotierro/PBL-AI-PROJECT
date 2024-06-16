@@ -13,7 +13,14 @@ public class DatabaseBehaviour : MonoBehaviour
     void Start()
     {
         DontDestroyOnLoad(gameObject);
+        StartCoroutine(waiter());
     }
 
-
+    public IEnumerator waiter()
+    {
+        yield return new WaitForSecondsRealtime(1f);
+        timePassed++;
+        Debug.Log("Current time passed is " + timePassed);
+        StartCoroutine(waiter());
+    }
 }
