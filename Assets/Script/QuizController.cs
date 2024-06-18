@@ -46,7 +46,25 @@ public class QuizController : MonoBehaviour
         {
             Debug.LogError("SubmitButton is not assigned in the Inspector.");
         }
-
+        if (DatabaseBehaviour.Instance.GetChapter() != null)
+        {
+            currentQuestionIndex = DatabaseBehaviour.Instance.GetQuizz();
+        }
+        else
+        {
+            currentQuestionIndex = 0;
+        }
+        if (DatabaseBehaviour.Instance.GetScore() != null)
+        {
+            score = DatabaseBehaviour.Instance.GetScore();
+            scoreText.text = "Score: " + score + "/" + ((currentQuestionIndex) * toggles.Length);
+        }
+        else
+        {
+            score = 0;
+        }
+        Debug.Log(DatabaseBehaviour.Instance.GetScore());
+        Debug.Log(DatabaseBehaviour.Instance.GetQuizz());
         LoadQuestion();
     }
 
@@ -100,13 +118,15 @@ public class QuizController : MonoBehaviour
             if (scoreText != null)
             {
                 scoreText.text = "Score: " + score + "/" + ((currentQuestionIndex + 1) * toggles.Length);
+
             }
             else
             {
                 Debug.LogError("ScoreText is not assigned in the Inspector.");
             }
-
             currentQuestionIndex++;
+            DatabaseBehaviour.Instance.SetQuizz(currentQuestionIndex);
+            DatabaseBehaviour.Instance.SetScore(score);
             LoadQuestion();
         }
     }

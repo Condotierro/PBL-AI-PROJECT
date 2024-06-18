@@ -2,12 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 [Serializable]
 public class DatabaseBehaviour : MonoBehaviour
 {
     private static DatabaseBehaviour instance;
     public static int chapter;
+    public static int Quizz;
+    public static int score;
+
 
     public static DatabaseBehaviour Instance
     {
@@ -39,5 +43,21 @@ public class DatabaseBehaviour : MonoBehaviour
     public void SetChapter(int newchapter)
     {
         chapter= newchapter;
+    }
+    public int GetQuizz()
+    {
+        return Quizz;
+    }
+    public void SetQuizz(int newQuizzPoint)
+    {
+        Quizz = newQuizzPoint;
+    }
+    public int GetScore()
+    {
+        return score;
+    }
+    public void SetScore(int newScore)
+    {
+        score = newScore;
     }
 }
