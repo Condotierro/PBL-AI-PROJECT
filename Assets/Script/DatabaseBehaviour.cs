@@ -6,21 +6,38 @@ using UnityEngine;
 [Serializable]
 public class DatabaseBehaviour : MonoBehaviour
 {
-    
-    public static int timePassed;
+    private static DatabaseBehaviour instance;
     public static int chapter;
+
+    public static DatabaseBehaviour Instance
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = FindObjectOfType<DatabaseBehaviour>(); // Look for existing instance in scene
+                if (instance == null)
+                {
+                    GameObject obj = new GameObject("DatabaseBehaviour");
+                    instance = obj.AddComponent<DatabaseBehaviour>(); // Create new instance if none found
+                }
+                DontDestroyOnLoad(instance.gameObject); // Ensure it persists across scenes
+            }
+            return instance;
+        }
+    }
 
     void Start()
     {
         DontDestroyOnLoad(gameObject);
-        StartCoroutine(waiter());
     }
 
-    public IEnumerator waiter()
+    public int GetChapter()
     {
-        yield return new WaitForSecondsRealtime(1f);
-        timePassed++;
-        Debug.Log("Current time passed is " + timePassed);
-        StartCoroutine(waiter());
+        return chapter;
+    }
+    public void SetChapter(int newchapter)
+    {
+        chapter= newchapter;
     }
 }

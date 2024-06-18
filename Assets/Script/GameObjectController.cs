@@ -12,12 +12,18 @@ public class GameObjectController : MonoBehaviour
 
     void Start()
     {
-        currentChapter = 0;
+        if(DatabaseBehaviour.Instance.GetChapter() != null)
+        {
+            currentChapter = DatabaseBehaviour.Instance.GetChapter();
+        }else
+        {
+            currentChapter = 0;
+        }
         totalChapters = chapterGameObjects.Length;
 
         nextButton.onClick.AddListener(NextChapter);
 
-        StartChapter(0);
+        StartChapter(currentChapter);
     }
 
     void StartChapter(int chapter)
@@ -40,6 +46,7 @@ public class GameObjectController : MonoBehaviour
         if (currentChapter < totalChapters-1)
         {
             currentChapter++;
+            DatabaseBehaviour.Instance.SetChapter(DatabaseBehaviour.Instance.GetChapter()+1);
             ChangeChapter(currentChapter);
             Debug.Log("Next Chapter: " + currentChapter);
         }
@@ -48,6 +55,5 @@ public class GameObjectController : MonoBehaviour
             Debug.Log("No more chapters.");
         }
     }
-
 
 }
