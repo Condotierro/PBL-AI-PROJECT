@@ -271,7 +271,7 @@ GameObject:
   m_Component:
   - component: {fileID: 99214754}
   m_Layer: 5
-  m_Name: Chapter4
+  m_Name: Chapter8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -284,7 +284,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99214753}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -292,7 +292,7 @@ RectTransform:
   - {fileID: 1368046107}
   - {fileID: 1339850559}
   - {fileID: 1071144534}
-  m_Father: {fileID: 170140637}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -338,74 +338,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &170140636
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 170140637}
-  - component: {fileID: 170140638}
-  m_Layer: 5
-  m_Name: Chapter2(LLM)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &170140637
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170140636}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1548922738}
-  - {fileID: 978250922}
-  - {fileID: 451380655}
-  - {fileID: 99214754}
-  m_Father: {fileID: 395826328}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &170140638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 170140636}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf828346ddc8e340975af3a18dacd8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextButton: {fileID: 411170678}
-  chapterGameObjects:
-  - {fileID: 1962211375}
-  - {fileID: 1593719422}
-  - {fileID: 320386832}
-  - {fileID: 1064497047}
-  - {fileID: 1083021680}
-  - {fileID: 1726069495}
-  - {fileID: 2074256802}
-  - {fileID: 320677004}
-  - {fileID: 1349105391}
-  - {fileID: 1412930585}
-  - {fileID: 2025732543}
-  - {fileID: 1368046106}
-  - {fileID: 1339850558}
-  - {fileID: 1071144533}
 --- !u!1 &196408516
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,8 +1567,6 @@ RectTransform:
   - {fileID: 411170677}
   - {fileID: 425174475}
   - {fileID: 2056368977}
-  - {fileID: 170140637}
-  - {fileID: 1140657487}
   - {fileID: 1988317839}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2182,7 +2112,7 @@ GameObject:
   m_Component:
   - component: {fileID: 451380655}
   m_Layer: 5
-  m_Name: Chapter3
+  m_Name: Chapter7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2195,7 +2125,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 451380654}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2203,7 +2133,7 @@ RectTransform:
   - {fileID: 1349105392}
   - {fileID: 1412930586}
   - {fileID: 2025732544}
-  m_Father: {fileID: 170140637}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3135,7 +3065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 978250922}
   m_Layer: 5
-  m_Name: Chapter2
+  m_Name: Chapter6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3148,7 +3078,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978250921}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -3157,7 +3087,7 @@ RectTransform:
   - {fileID: 1726069496}
   - {fileID: 2074256803}
   - {fileID: 320677005}
-  m_Father: {fileID: 170140637}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4256,74 +4186,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1136438637}
   m_CullTransparentMesh: 1
---- !u!1 &1140657486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1140657487}
-  - component: {fileID: 1140657488}
-  m_Layer: 5
-  m_Name: Chapter3(DL)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1140657487
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140657486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1554822519}
-  - {fileID: 1277357246}
-  - {fileID: 1575949235}
-  - {fileID: 1445568964}
-  m_Father: {fileID: 395826328}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1140657488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1140657486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fbf828346ddc8e340975af3a18dacd8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextButton: {fileID: 411170678}
-  chapterGameObjects:
-  - {fileID: 266996048}
-  - {fileID: 1136438637}
-  - {fileID: 404815312}
-  - {fileID: 1116872931}
-  - {fileID: 1753636316}
-  - {fileID: 1297196359}
-  - {fileID: 1840545315}
-  - {fileID: 849527901}
-  - {fileID: 1478429521}
-  - {fileID: 1134792031}
-  - {fileID: 1943244348}
-  - {fileID: 1135504852}
-  - {fileID: 1419054949}
-  - {fileID: 1683471580}
 --- !u!1 &1165400341
 GameObject:
   m_ObjectHideFlags: 0
@@ -4607,7 +4469,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1277357246}
   m_Layer: 5
-  m_Name: Chapter2
+  m_Name: Chapter10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4620,7 +4482,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1277357245}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4629,7 +4491,7 @@ RectTransform:
   - {fileID: 1297196360}
   - {fileID: 1840545316}
   - {fileID: 849527902}
-  m_Father: {fileID: 1140657487}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6137,7 +5999,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1445568964}
   m_Layer: 5
-  m_Name: Chapter4
+  m_Name: Chapter12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6150,7 +6012,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1445568963}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6158,7 +6020,7 @@ RectTransform:
   - {fileID: 1135504853}
   - {fileID: 1419054950}
   - {fileID: 1683471581}
-  m_Father: {fileID: 1140657487}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6312,7 +6174,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1548922738}
   m_Layer: 5
-  m_Name: Chapter1
+  m_Name: Chapter5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6325,7 +6187,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1548922737}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6335,7 +6197,7 @@ RectTransform:
   - {fileID: 320386833}
   - {fileID: 1064497048}
   - {fileID: 1420804600}
-  m_Father: {fileID: 170140637}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6352,7 +6214,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554822519}
   m_Layer: 5
-  m_Name: Chapter1
+  m_Name: Chapter9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6365,7 +6227,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554822518}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6375,7 +6237,7 @@ RectTransform:
   - {fileID: 404815313}
   - {fileID: 1116872932}
   - {fileID: 36296317}
-  m_Father: {fileID: 1140657487}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6392,7 +6254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1575949235}
   m_Layer: 5
-  m_Name: Chapter3
+  m_Name: Chapter11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6405,7 +6267,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1575949234}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6414,7 +6276,7 @@ RectTransform:
   - {fileID: 1134792032}
   - {fileID: 1943244349}
   - {fileID: 264328839}
-  m_Father: {fileID: 1140657487}
+  m_Father: {fileID: 2056368977}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8599,6 +8461,14 @@ RectTransform:
   - {fileID: 141955339}
   - {fileID: 939795849}
   - {fileID: 1646308895}
+  - {fileID: 1548922738}
+  - {fileID: 978250922}
+  - {fileID: 451380655}
+  - {fileID: 99214754}
+  - {fileID: 1554822519}
+  - {fileID: 1277357246}
+  - {fileID: 1575949235}
+  - {fileID: 1445568964}
   m_Father: {fileID: 395826328}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
