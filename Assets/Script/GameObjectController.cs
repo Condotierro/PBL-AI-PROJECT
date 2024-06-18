@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameObjectController : MonoBehaviour
@@ -47,7 +48,14 @@ public class GameObjectController : MonoBehaviour
         {
             currentChapter++;
             DatabaseBehaviour.Instance.SetChapter(DatabaseBehaviour.Instance.GetChapter()+1);
-            ChangeChapter(currentChapter);
+            if(currentChapter == 23)
+            {
+                SceneManager.LoadSceneAsync(5);
+            }
+            else
+            {
+                ChangeChapter(currentChapter);
+            }
             Debug.Log("Next Chapter: " + currentChapter);
         }
         else
